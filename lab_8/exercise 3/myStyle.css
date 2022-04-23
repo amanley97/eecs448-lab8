@@ -1,0 +1,57 @@
+body
+{
+    background-image: url(assets/background.png); background-size: 100%;
+    background-repeat: no-repeat; background-attachment: fixed;
+    background-color: slategrey;
+    margin: auto auto;
+    font-family: courier;
+}
+
+#bio
+{
+    background-color: steelblue;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    opacity: 75%;
+}
+
+
+#bio ul
+{
+    display: table;
+    margin: auto auto;
+}
+
+a:hover
+{
+    background-color: steelblue;
+}
+
+h1
+{
+    text-align: center;
+}
+
+img
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#links
+{
+    text-align: center;
+}
+
+iframe
+{
+    padding-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

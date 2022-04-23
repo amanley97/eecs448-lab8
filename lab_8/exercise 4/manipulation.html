@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Exercise 4</title>
+        <script type="text/javascript" src="script.js"></script>
+        <h1>Exercise 4: CSS Manipulation</h1>
+    </head>
+    <body style="background-color:steelblue;">
+        <p id="text" style="border-style: solid">EXAMPLE TEXT...</p>
+        <p>
+            <b>Change the Border:</b><br>
+            <form name="border">
+                <label for="red">Red:</label><input type="text" id="borderRed"><label>From 0-255.</label><br>
+                <label for="green">Green:</label><input type="text" id="borderGreen"><label>From 0-255.</label><br>
+                <label for="Blue">Blue:</label><input type="text" id="borderBlue"><label>From 0-255.</label><br>
+                <label for="width">Width:</label><input type="text" id="borderWidth"><label>In pixels.</label><br>
+            </form>
+        </p>
+        <p>
+            <b>Change the Background Color:</b><br>
+            <form name="background-color">
+                <label for="red">Red:</label><input type="text" id="backgroundRed"><label>From 0-255.</label><br>
+                <label for="green">Green:</label><input type="text" id="backgroundGreen"><label>From 0-255.</label><br>
+                <label for="blue">Blue:</label><input type="text" id="backgroundBlue"><label>From 0-255.</label>
+            </form>
+        </p>
+        <button id="button" onclick="makeChange()">Make some changes!</button> 
+    </body>
+</html>
