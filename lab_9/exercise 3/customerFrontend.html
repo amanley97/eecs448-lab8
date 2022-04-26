@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>страх перед богом</title>
+        <link rel="stylesheet" href="myStyle.css">
+        <script type="text/javascript" src="formChecker.js"></script>
+    </head>
+</html>
+
+<body>
+    <h1>Welcome "valued" customers!</h1>
+    <h2><em>to our totally legit online site</em></h2>
+
+    <form id="myform" action="customerBackend.php" method="post" onsubmit=" return validate()" novalidate></form>
+    <table class="centerTable border">
+        <thead>
+            <th class="border">Russian man's credit card</th>
+            <th class="border">Winning Lottery Ticket</th>
+            <th class="border">Timeshare you'll never use</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="border">
+                    <img src="assets/cc.jpeg" width="250">
+                </td>
+                <td class="border">
+                    <img src="assets/lotto.jpeg" width="250">
+                </td>
+                <td class="border">
+                    <img src="assets/vacay.jpeg" width="250">
+                </td>
+            </tr>
+            <tr>
+                <td class="border">
+                    Price: $60
+                    <div class="quantity">
+                    <label for="numCC">Qty: </label>
+                    <input type="number" min="0" form="myform" name="numCC" class="quantity">
+                    </div>
+                </td>
+                <td class="border">
+                    Price: $35
+                    <div class="quantity">
+                    <label for="numLotto">Qty: </label>
+                    <input type="number" min="0" form="myform" name="numLotto" class="quantity">
+                    </div>
+                </td>
+                <td class="border">
+                    Price: $100 (+ your unborn child.)
+                    <div class="quantity">
+                    <label for="numVacay">Qty: </label>
+                    <input type="number" min="0" form="myform" name="numVacay" class="quantity">
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="centerTable border">
+        <tbody>
+            <tr>
+                <td>Select shipping:</td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="7-Day" form="myform">
+                    <label for="7day">7-Day Shipping (Free)</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="3-Day" form="myform">
+                    <label for="3day">3-Day Shipping ($5)</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td class="border">
+                    <input type="radio" name="shipping" value="Overnight" form="myform">
+                    <label>Overnight Shipping ($50)</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table class="centerTable">
+        <thead>
+            <th>Input Credentials: </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <label for="username">Username: </label>
+                    <input type="email" name="username" form="myform" class="login">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" form="myform" class="login">
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="submitWrapper">
+        <input type="reset" form="myform" id="resetButton"> <input type="submit" form="myform" id="submitButton">
+    </div>
+
+    <h3>please note this store in no way <em>actually</em> sells illegal items.</h3>
+
+</body>
