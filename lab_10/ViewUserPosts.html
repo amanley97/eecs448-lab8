@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>User Posts</title>
+	<link rel="stylesheet" href="myStyle.css"/>
+    </head>
+    <body>
+        <?php
+           <!-- database credentials redacted -->
+           $mysqli = new mysqli("mysql.eecs.ku.edu", "USERNAME", "PASSWORD", "DATABASE"); 
+            if ($mysqli->connect_errno) {
+                echo "<h1>Could not connect to DB</h1>";
+            }
+            else {
+                $query = "SELECT user_id FROM Users";
+                $result = $mysqli->query($query);
+                if ($result) {
+                    echo '<h1>View User Posts</h1><form action="ViewUserPosts.php" method="get"><label for="user">User: </label><select name="user">';
+                    while ($row = $result->fetch_assoc()) {
+                        echo '<option value="' . $row['user_id'] . '">' . $row['user_id'] . '</option>';
+                    }
+                    echo "</select><br><br><input type='submit'></form>";
+                    $result->free();
+                }
+                else {
+                    echo '<h1>Could not get users</h1>';
+                }
+                $mysqli->close();
+            }
+        ?>
+    </body>
+</html>
